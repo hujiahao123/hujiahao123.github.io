@@ -109,7 +109,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto floatable shadow " style='opacity: 0' >
+<header id="l_header" class="l_header auto floatable shadow show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -544,7 +544,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper title featured' style="display: ;">
+        <div id="full" class='cover-wrapper title featured' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg"></div>
           
@@ -618,12 +618,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   
+    <div class='headimg-div'>
+      <a class='headimg-a'>
+        <img class='headimg' src='https://s1.ax1x.com/2020/04/26/J6bgQP.jpg'/>
+      </a>
+    </div>
+  
   <div class="article-meta" id="top">
     
-    
-      <a title='Hexo+icarus基本配置' href='/2020/03/29/jc/'>
-        <img class='thumbnail' src='https://s1.ax1x.com/2020/04/26/J6bgQP.jpg'>
-      </a>
     
     
       <h1 class="title">
@@ -689,13 +691,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <p>icarus这个主题比较小众，想要改什么在网上搜到的基本都是关于NexT的，对于我这种前端知识匮乏的人来说，还是有点费劲的，所以看了各种博客后，总结一下icarus的基本配置</p>
 <!---more--->
-<h3 id="下载icarus主题"><a href="#下载icarus主题" class="headerlink" title="下载icarus主题"></a>下载icarus主题</h3><p>icarus官方文档地址：<span class="exturl" data-url="aHR0cHM6Ly9ibG9nLnpoYW5ncnVpcGVuZy5tZS9oZXhvLXRoZW1lLWljYXJ1cy8=">https://blog.zhangruipeng.me/hexo-theme-icarus/</span></p>
+<h3 id="下载icarus主题"><a href="#下载icarus主题" class="headerlink" title="下载icarus主题"></a>下载icarus主题</h3><p>icarus官方文档地址：<a target="_blank" rel="noopener" href="https://blog.zhangruipeng.me/hexo-theme-icarus/">https://blog.zhangruipeng.me/hexo-theme-icarus/</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">主题下载地址:</span><br><span class="line">     git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-icarus themes&#x2F;icarus</span><br></pre></td></tr></table></figure>
 <h3 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h3><p>更改站点配置文件_config.yml,将主题改为icarus<br>Hexo\blog\ _config.yml</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: icarus</span><br></pre></td></tr></table></figure>
 <p>打开Hexo\blog\themes\icarus_config.yml配置主题内容</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br></pre></td><td class="code"><pre><span class="line"># Version of the Icarus theme that is currently used</span><br><span class="line">version: 2.3.0</span><br><span class="line"># 你的网站图标，可以搜索在线图标制作，并将其放在images文件夹中</span><br><span class="line">favicon: &#x2F;images&#x2F;favicons.ico</span><br><span class="line"># Path or URL to RSS atom.xml</span><br><span class="line">rss: &#x2F;atom.xml</span><br><span class="line"># 显示在导航栏左侧的网站logo，同样可以自己制作</span><br><span class="line">logo: &#x2F;images&#x2F;gen.svg</span><br><span class="line"># Open Graph metadata</span><br><span class="line"># https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;helpers.html#open-graph</span><br><span class="line">open_graph:</span><br><span class="line">    # Facebook App ID</span><br><span class="line">    fb_app_id: </span><br><span class="line">    # Facebook Admin ID</span><br><span class="line">    fb_admins: </span><br><span class="line">    # Twitter ID</span><br><span class="line">    twitter_id: </span><br><span class="line">    # Twitter site</span><br><span class="line">    twitter_site: </span><br><span class="line">    # Google+ profile link</span><br><span class="line">    google_plus: </span><br><span class="line">#  导航栏</span><br><span class="line">navbar:</span><br><span class="line">    #菜单（显示名称：对应文件夹）</span><br><span class="line">    menu:</span><br><span class="line">        主页: &#x2F;</span><br><span class="line">        归档: &#x2F;archives</span><br><span class="line">        分类: &#x2F;categories</span><br><span class="line">        标签: &#x2F;tags</span><br><span class="line">        关于: &#x2F;about   </span><br><span class="line">    # 导航栏右侧图标链接</span><br><span class="line">    links:</span><br><span class="line">        My GitHub:</span><br><span class="line">            icon: fab fa-github</span><br><span class="line">            url: &#39;你的gityhub地址&#39;</span><br><span class="line"># Footer section link settings</span><br><span class="line">footer:</span><br><span class="line">    # 页脚图标链接</span><br><span class="line">    links:</span><br><span class="line">        Creative Commons:</span><br><span class="line">            icon: fab fa-creative-commons</span><br><span class="line">            url: &#39;https:&#x2F;&#x2F;creativecommons.org&#x2F;&#39;</span><br><span class="line">        Attribution 4.0 International:</span><br><span class="line">            icon: fab fa-creative-commons-by</span><br><span class="line">            url: &#39;https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by&#x2F;4.0&#x2F;&#39;</span><br><span class="line">        Download on GitHub:</span><br><span class="line">            icon: fab fa-github</span><br><span class="line">            url: &#39;http:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-icarus&#39;</span><br><span class="line"># 文章显示设置</span><br><span class="line">article:</span><br><span class="line">    # Code highlight theme</span><br><span class="line">    # https:&#x2F;&#x2F;github.com&#x2F;highlightjs&#x2F;highlight.js&#x2F;tree&#x2F;master&#x2F;src&#x2F;styles</span><br><span class="line">    #代码主题atom-one-light亮色，atom-one-dark暗色</span><br><span class="line">    highlight: atom-one-dark</span><br><span class="line">    # 是否显示文章主图</span><br><span class="line">    thumbnail: true</span><br><span class="line">    # 是否显示估算阅读时间</span><br><span class="line">    readtime: true</span><br><span class="line"># 搜索插件设置</span><br><span class="line"># http:&#x2F;&#x2F;ppoffice.github.io&#x2F;hexo-theme-icarus&#x2F;categories&#x2F;Configuration&#x2F;Search-Plugins</span><br><span class="line">search:</span><br><span class="line">    # Name of the search plugin</span><br><span class="line">    type: insight</span><br><span class="line"># 评论插件设置</span><br><span class="line"># http:&#x2F;&#x2F;ppoffice.github.io&#x2F;hexo-theme-icarus&#x2F;categories&#x2F;Configuration&#x2F;Comment-Plugins</span><br><span class="line">comment:</span><br><span class="line">    #可选valine，disqus（科学上网）等</span><br><span class="line">    # Name of the comment plugin</span><br><span class="line">    #type: valine</span><br><span class="line">    #app_id: 不为空</span><br><span class="line">    #app_key: 不为空</span><br><span class="line">    #notify: true</span><br><span class="line">    #verify: true</span><br><span class="line">    #placeholder:</span><br><span class="line">    type: disqus</span><br><span class="line">    shortname: 不能为空</span><br><span class="line"># 打赏功能</span><br><span class="line"># http:&#x2F;&#x2F;ppoffice.github.io&#x2F;hexo-theme-icarus&#x2F;categories&#x2F;Donation&#x2F;</span><br><span class="line">donate:</span><br><span class="line">    -</span><br><span class="line">        # 阿里巴巴支付宝</span><br><span class="line">        type: alipay</span><br><span class="line">        # 二维码图片</span><br><span class="line">        qrcode: &#39;&#x2F;images&#x2F;honbao.PNG&#39;</span><br><span class="line">    -</span><br><span class="line">        # 微信</span><br><span class="line">        type: wechat</span><br><span class="line">        # 二维码图片</span><br><span class="line">        qrcode: &#39;&#x2F;images&#x2F;yjtp.png&#39;</span><br><span class="line">    -</span><br><span class="line"># 分享插件设置</span><br><span class="line"># http:&#x2F;&#x2F;ppoffice.github.io&#x2F;hexo-theme-icarus&#x2F;categories&#x2F;Configuration&#x2F;Share-Plugins</span><br><span class="line">share:</span><br><span class="line">    # 插件类型，有多种，可选，自行百度</span><br><span class="line">    type: sharejs</span><br><span class="line"># Sidebar settings.</span><br><span class="line"># Please be noted that a sidebar is only visible when it has at least one widget</span><br><span class="line">sidebar:</span><br><span class="line">    # 左侧边栏设置</span><br><span class="line">    left:</span><br><span class="line">        # 是否不随页面滚动</span><br><span class="line">        # http:&#x2F;&#x2F;ppoffice.github.io&#x2F;hexo-theme-icarus&#x2F;Configuration&#x2F;Theme&#x2F;make-a-sidebar-sticky-when-page-scrolls&#x2F;</span><br><span class="line">        sticky: false</span><br><span class="line">    # 右侧边栏设置</span><br><span class="line">    right:</span><br><span class="line">        # 是否不随页面滚动</span><br><span class="line">        # http:&#x2F;&#x2F;ppoffice.github.io&#x2F;hexo-theme-icarus&#x2F;Configuration&#x2F;Theme&#x2F;make-a-sidebar-sticky-when-page-scrolls&#x2F;</span><br><span class="line">        sticky: false</span><br><span class="line"># 边栏小部件设置</span><br><span class="line"># http:&#x2F;&#x2F;ppoffice.github.io&#x2F;hexo-theme-icarus&#x2F;categories&#x2F;Widgets&#x2F;</span><br><span class="line">widgets:</span><br><span class="line">    -</span><br><span class="line">        # 个人信息</span><br><span class="line">        type: profile</span><br><span class="line">        # 部件位置（左）</span><br><span class="line">        position: left</span><br><span class="line">        # 作者名（字符串）</span><br><span class="line">        author: 飞鱼</span><br><span class="line">        # 作者身份描述（字符串）</span><br><span class="line">        author_title: Student</span><br><span class="line">        # 作者当前居住地</span><br><span class="line">        location: China,Fujian</span><br><span class="line">        # 头像（可用本地图片或网络图片链接）</span><br><span class="line">        avatar: &#39;&#x2F;images&#x2F;ava.png&#39;</span><br><span class="line">        # Email address for the Gravatar to be shown in the profile widget</span><br><span class="line">        gravatar: </span><br><span class="line">        # 关注我的链接，可设为你的GitHub主页</span><br><span class="line">        follow_link: &#39;https:&#x2F;&#x2F;github.com&#x2F;yourname&#39;</span><br><span class="line">        # 个人介绍部件底部图标社交链接</span><br><span class="line">        social_links:</span><br><span class="line">            Github:</span><br><span class="line">                icon: fab fa-github</span><br><span class="line">                url: &#39;https:&#x2F;&#x2F;github.com&#x2F;yourname&#39;</span><br><span class="line">            Facebook:</span><br><span class="line">                icon: fab fa-facebook</span><br><span class="line">                url: &#39;https:&#x2F;&#x2F;facebook.com&#39;</span><br><span class="line">            Twitter:</span><br><span class="line">                icon: fab fa-twitter</span><br><span class="line">                url: &#39;https:&#x2F;&#x2F;twitter.com&#x2F;yourname&#39;</span><br><span class="line">            RSS:</span><br><span class="line">                icon: fas fa-rss</span><br><span class="line">                url: &#x2F;</span><br><span class="line">    -</span><br><span class="line">        # Widget name</span><br><span class="line">        type: toc</span><br><span class="line">        # Where should the widget be placed, left or right</span><br><span class="line">        position: left</span><br><span class="line">    -</span><br><span class="line">        # 分类</span><br><span class="line">        type: category</span><br><span class="line">        # 位置指定</span><br><span class="line">        position: left</span><br><span class="line">    -</span><br><span class="line">        # 标签云</span><br><span class="line">        type: tagcloud</span><br><span class="line">        # 位置</span><br><span class="line">        position: right</span><br><span class="line">    -</span><br><span class="line">        # 近期文章</span><br><span class="line">        type: recent_posts</span><br><span class="line">        # 位置</span><br><span class="line">        position: left</span><br><span class="line">    -</span><br><span class="line">        # 归档</span><br><span class="line">        type: archive</span><br><span class="line">        # Where should the widget be placed, left or right</span><br><span class="line">        position: right</span><br><span class="line">    -</span><br><span class="line">        # 标签</span><br><span class="line">        type: tag</span><br><span class="line">        # Where should the widget be placed, left or right</span><br><span class="line">        position: right</span><br><span class="line">    -</span><br><span class="line">        # 外部链接</span><br><span class="line">        type: links</span><br><span class="line">        # Where should the widget be placed, left or right</span><br><span class="line">        position: left</span><br><span class="line">        # Links to be shown in the links widget</span><br><span class="line">        links:</span><br><span class="line">            Google: &#39;https:&#x2F;&#x2F;google.com&#39;</span><br><span class="line">            Baidu: &#39;https:&#x2F;&#x2F;baidu.com&#39;</span><br></pre></td></tr></table></figure>
-<p>参考网站 <span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21hcnZpbmUvYXJ0aWNsZS9kZXRhaWxzLzg5ODE2ODQ2">https://blog.csdn.net/marvine/article/details/89816846</span></p>
+<p>参考网站 <a target="_blank" rel="noopener" href="https://blog.csdn.net/marvine/article/details/89816846">https://blog.csdn.net/marvine/article/details/89816846</a></p>
 <p>未完，待续。。。。。。。</p>
 
   
@@ -706,36 +708,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2020/04/02/%E9%9D%9E%E8%B0%93%E8%AF%AD%E5%8A%A8%E8%AF%8D/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>非谓语动词</p>
-          <p class='content'>总结一下非谓语动词……
+        <a class='prev' href='/2020/04/04/%E6%95%B0%E7%BB%84/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>数组常用算法</p>
+          <p class='content'>数组的常用查找和排序算法
 
-
-
-
-
-
-主动
-
-
-被动
-
-
-
-
-
-一般式
-进行式
-完成式
-一般式
-完成式
-
-
-不定式
-to do
-to be doing
-to have done
-to be don...</p>
+线性查找12345678910111213141516171819&#x2F;&#x2F;线性查找：String dest &#x3D; &quot;BB&quot;...</p>
         </a>
       
       
@@ -891,11 +868,6 @@ to be don...</p>
       <ul class="entry navigation">
         
           <li><a class="flat-box"
-            title="/categories/English/" href="/categories/English/"
-            id="categoriesEnglish"
-            ><div class='name'>English</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
             title="/categories/Hexo/" href="/categories/Hexo/"
             id="categoriesHexo"
             ><div class='name'>Hexo</div><div class='badge'>(1)</div></a></li>
@@ -970,7 +942,7 @@ to be don...</p>
 
 
     <div class='content'>
-      <a href="/tags/English/" style="font-size: 14px; color: #999">English</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/Icarus/" style="font-size: 14px; color: #999">Icarus</a> <a href="/tags/Java/" style="font-size: 24px; color: #555">Java</a> <a href="/tags/SSM/" style="font-size: 14px; color: #999">SSM</a> <a href="/tags/Spring/" style="font-size: 14px; color: #999">Spring</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" style="font-size: 19px; color: #777">数据结构与算法</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 14px; color: #999">算法</a> <a href="/tags/%E9%9D%9E%E8%B0%93%E8%AF%AD%E5%8A%A8%E8%AF%8D/" style="font-size: 14px; color: #999">非谓语动词</a>
+      <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/Icarus/" style="font-size: 14px; color: #999">Icarus</a> <a href="/tags/Java/" style="font-size: 24px; color: #555">Java</a> <a href="/tags/SSM/" style="font-size: 14px; color: #999">SSM</a> <a href="/tags/Spring/" style="font-size: 14px; color: #999">Spring</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" style="font-size: 19px; color: #777">数据结构与算法</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 14px; color: #999">算法</a>
     </div>
   </section>
 
@@ -995,14 +967,14 @@ to be don...</p>
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>
