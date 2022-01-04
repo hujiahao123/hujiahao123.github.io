@@ -6,7 +6,7 @@
   <link href="https://hujiahao.top/atom.xml" rel="self"/>
   
   <link href="https://hujiahao.top/"/>
-  <updated>2021-11-20T12:30:17.769Z</updated>
+  <updated>2022-01-04T04:44:30.000Z</updated>
   <id>https://hujiahao.top/</id>
   
   <author>
@@ -17,15 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://hujiahao.top/2021/11/20/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/"/>
-    <id>https://hujiahao.top/2021/11/20/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/</id>
-    <published>2021-11-20T12:30:17.769Z</published>
-    <updated>2021-11-20T12:30:17.769Z</updated>
+    <title>maven中的打包方式</title>
+    <link href="https://hujiahao.top/2022/01/04/maven%E4%B8%AD%E7%9A%84%E6%89%93%E5%8C%85%E6%96%B9%E5%BC%8F/"/>
+    <id>https://hujiahao.top/2022/01/04/maven%E4%B8%AD%E7%9A%84%E6%89%93%E5%8C%85%E6%96%B9%E5%BC%8F/</id>
+    <published>2022-01-04T04:44:30.000Z</published>
+    <updated>2022-01-04T04:44:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><packaging>pom</packaging>是什么意思？</p><p>1、配置<packaging>pom</packaging>的意思是使用maven分模块管理，都会有一个父级项目，pom文件一个重要的属性就是packaging（打包类型），一般来说所有的父级项目的packaging都为pom，packaging默认类型jar类型，如果不做配置，maven会将该项目打成jar包。</p><p>2、项目的打包类型：pom、jar、war</p><p>　　packing默认是jar类型，</p><p>　　pom ———&gt; 父类型都为pom类型</p><p>　　jar ———&gt; 内部调用或者是作服务使用</p><p>　　war ———&gt; 需要部署的项目</p><p>3、</p><p>POM是最简单的打包类型。不像一个JAR，SAR，或者EAR，它生成的构件只是它本身。</p><p>没有代码需要测试或者编译，也没有资源需要处理。打包类型为POM的项目的默认目标</p><p>生命周期阶段    目标</p><p>package        site:attach-descriptor</p><p>install          install:install</p><p>deploy         deploy:deploy</p><p>4、pom 项目里没有java代码，也不执行任何代码，只是为了聚合工程或传递依赖用的。</p><p>5、可以理解成是将多个model合并</p>]]></content>
+    
+    
+    <summary type="html">在单一模块项目的pom.xml文件里写入了&lt;packaging&gt;pom&lt;/packaging&gt;导致项目无法运行</summary>
     
     
     
+    <category term="避坑" scheme="https://hujiahao.top/categories/%E9%81%BF%E5%9D%91/"/>
     
+    
+    <category term="maven" scheme="https://hujiahao.top/tags/maven/"/>
     
   </entry>
   

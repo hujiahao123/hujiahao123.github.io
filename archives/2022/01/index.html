@@ -6,6 +6,8 @@
   <!-- SEO相关 -->
   
     
+      <meta name="robots" content="noindex,follow">
+    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -23,7 +25,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Love💕Todos - 宁静致远</title>
+  <title>归档：2022/1 - 宁静致远</title>
   
 
   
@@ -542,7 +544,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper page featured' style="display: none;">
+        <div id="full" class='cover-wrapper  featured' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.jpg"></div>
           
@@ -611,312 +613,76 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-  <article class="article post white-box reveal md shadow article-type-page" id="page" itemscope itemprop="blogPost">
-  
-
-
-  
-  <div class="article-meta" id="top">
+	
+		
+  <section class="post-list">
     
-    
-    
-      <h1 class="title">
-        Love💕Todos
-      </h1>
-      <div class='new-meta-box'>
-        
-          
-            
-<div class='new-meta-item author'>
-  <a class='author' href="" rel="nofollow">
-    <img no-lazy src="https://z3.ax1x.com/2021/09/06/hf0Pdf.jpg">
-    <p>宁静致远</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2021年3月1日</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class="new-meta-item browse leancloud">
-    <a class='notlink'>
       
-      <div id="lc-pv" data-title="Love💕Todos" data-path="/todo/">
-        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
-        次浏览
-      </div>
-    </a>
-  </div>
-
-
+        
           
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+    <div class='headimg-div'>
+      <a class='headimg-a' href="/2022/01/04/maven%E4%B8%AD%E7%9A%84%E6%89%93%E5%8C%85%E6%96%B9%E5%BC%8F/">
+        <img class='headimg' src='https://www.hualigs.cn/image/61d3d3c9c17eb.jpg'/>
+      </a>
+    </div>
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2022/01/04/maven%E4%B8%AD%E7%9A%84%E6%89%93%E5%8C%85%E6%96%B9%E5%BC%8F/">
+        maven中的打包方式
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      <p>在单一模块项目的pom.xml文件里写入了<packaging>pom</packaging>导致项目无法运行</p>
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time>2022-01-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E9%81%BF%E5%9D%91/">避坑</a>
         
       </div>
-    
-  </div>
-
-
-  
-  
-  <link rel="stylesheet" type="text/css" href="/css/LoveTodos.css">
-<div class="love-desc">这里记录着文儿与豪将会一起完成的事🧑👧<span class="return">💕</span></div>
-<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
-<div class="love-todos"></div>
-
-
-<script type="text/javascript">
-    //这是要遍历时间轴的数据
-    var lovetodos=[
-        {
-            todo:'',
-            achieve:'1.一起去电影院看一场电影',
-            checked:'checked'
-        },
-        {
-            todo:'',
-            achieve:'2.一起牵手逛街',
-            checked:'checked'
-        },
-        {
-            todo:'3.一起去一趟迪士尼游乐园',
-            achieve:'',
-            checked:''
-        },
-        {
-            todo:'4.一起去游泳',
-            achieve:''
-        },
-        {
-            todo:'5.一起唱歌并且录下来',
-            achieve:''
-        },
-        {
-            todo:'6.一起在厨房做次饭',
-            achieve:''
-        },  
-        {todo:'7.一起过次烛光晚餐🍷',achieve:'',checked:''}, 
-        {todo:'8.一起过生日',achieve:'',checked:''},   
-        {todo:'9.一起打扫卫生',achieve:'',checked:''},   
-        {todo:'10.一起去一次鬼屋',achieve:'',checked:''},   
-        {todo:'11.一起去蹦极',achieve:'',checked:''},   
-        {todo:'12.一起养一只宠物',achieve:'',checked:''},     
-        {todo:'13.一起研究口红色号',achieve:'',checked:''},    
-        {todo:'14.一起抓娃娃',achieve:'',checked:''},    
-        {todo:'',achieve:'15.一起换情侣头像',checked:'checked'},    
-        {todo:'16.一起去做次陶艺',achieve:'',checked:''},    
-        {todo:'‍',achieve:'17.一起锻炼身体🤸',checked:'checked'},    
-        {todo:'18.一起去吃一次全家桶',achieve:'',checked:''},    
-        {todo:'19.一起去旅游⛰',achieve:'',checked:''},    
-        {todo:'20.一起换手机壁纸',achieve:'',checked:''},    
-        {todo:'21.一起坐一次摩天轮',achieve:'',checked:''},    
-        {todo:'22.一起拍视频记录生活',achieve:'',checked:''},   
-        {todo:'23.一起刷牙，然后亲亲',achieve:'',checked:''},   
-        {todo:'24.一起去看一次海，去沙滩👙',achieve:'',checked:''},   
-        {todo:'25.一起去爬山',achieve:'',checked:''},   
-        {todo:'26.一起看日出',achieve:'',checked:''},   
-        {todo:'27.互穿对方的衣服，拍照留念',achieve:'',checked:''},   
-        {todo:'28.一起坐一次摩天轮',achieve:'',checked:''},   
-        {todo:'29.一起逛超市买好吃的',achieve:'',checked:''},  
-        {todo:'30.一起去书店看书，分享自己喜欢的书籍📕',achieve:'',checked:''},  
-        {todo:'31.一起在下雨天追剧☔️',achieve:'',checked:''},  
-        {todo:'32.一起做一次蛋糕甜点',achieve:'',checked:''},  
-        {todo:'33.一起看日落',achieve:'',checked:''},  
-        {todo:'34.一起上下班，坐地铁',achieve:'',checked:''},    
-        {todo:'35.一起弹吉他',achieve:'',checked:''},  
-        {todo:'36.一起去买菜',achieve:'',checked:''},  
-        {todo:'37.一起玩游戏🎮',achieve:'',checked:''},  
-        {todo:'38.一起坐一次飞机✈️',achieve:'',checked:''},  
-        {todo:'39.一起种花草',achieve:'',checked:''},  
-        {todo:'40.一起养宠物',achieve:'',checked:''}, 
-        {todo:'41.一起用情侣手机壳',achieve:'',checked:''},  
-        {todo:'42.一起去一次海底世界',achieve:'',checked:''},  
-        {todo:'43.一起喝醉一次',achieve:'',checked:''},  
-        {todo:'44.一起打扑克牌♣️',achieve:'',checked:''},  
-        {todo:'45.一起去天安门看升国旗',achieve:'',checked:''},  
-        {todo:'46.一起修理电器',achieve:'',checked:''},  
-        {todo:'47.一起看烟花',achieve:'',checked:''},  
-        {todo:'',achieve:'48.一起吃火锅',checked:'checked'},    
-        {todo:'49.一起庆祝恋爱纪念日',achieve:'',checked:''},  
-        {todo:'50.一起去一次教堂⛪️',achieve:'',checked:''},  
-        {todo:'51.一起看雪，堆雪人☃️',achieve:'',checked:''},  
-        {todo:'52.一起换发型，剪头发',achieve:'',checked:''},  
-        {todo:'53.一起和朋友们去吃饭',achieve:'',checked:''},  
-        {todo:'',achieve:'54.一起听音乐，听同一首歌',checked:'checked'},  
-        {todo:'55.一起坐一次船',achieve:'',checked:''},  
-        {todo:'56.一起露营，住一次帐篷 ⛺',achieve:'',checked:''},  
-        {todo:'57.一起DIY手工✂️',achieve:'',checked:''},  
-        {todo:'',achieve:'58.给对方准备礼物',checked:'checked'},  
-        {todo:'59.一起去我们上过的小学',achieve:'',checked:''},  
-        {todo:'60.一起去我们上过的中学',achieve:'',checked:''},  
-        {todo:'61.一起去我们上过的大学',achieve:'',checked:''},  
-        {todo:'62.一起在沙发上躺着',achieve:'',checked:''},  
-        {todo:'63.一起睡个懒觉，赖个床😴',achieve:'',checked:''},  
-        {todo:'64.偷偷为对方买喜欢又舍不得的东西',achieve:'',checked:''},  
-        {todo:'65.互换角色一天',achieve:'',checked:''},  
-        {todo:'66.一起坐一次巴士，在没去过的地方下车',achieve:'',checked:''},  
-        {todo:'67.一起规划未来',achieve:'',checked:''},  
-        {todo:'68.给对方准备一次浪漫的求婚✨',achieve:'',checked:''},  
-        {todo:'69.一起在午夜看一次恐怖片',achieve:'',checked:''},  
-        {todo:'70.一起安静的听雨声',achieve:'',checked:''},  
-        {todo:'71.一起看一场演唱会',achieve:'',checked:''},  
-        {todo:'72.一起去挑选一束花',achieve:'',checked:''},  
-        {todo:'73.一起去跳一次广场舞',achieve:'',checked:''},  
-        {todo:'74.一起去见证一次别人的婚礼',achieve:'',checked:''},  
-        {todo:'75.一起为对方按摩一次',achieve:'',checked:''},  
-        {todo:'76.一起放一次风筝',achieve:'',checked:''},  
-        {todo:'77.一起吐槽一次对方的缺点',achieve:'',checked:''}, 
-        {todo:'78.一起打扮自己',achieve:'',checked:''}, 
-        {todo:'79.一起去见彼此的朋友',achieve:'',checked:''}, 
-        {todo:'80.一起看星星⭐',achieve:'',checked:''}, 
-        {todo:'81.一起为对方剪指甲',achieve:'',checked:''}, 
-        {todo:'82.一起去看樱花',achieve:'',checked:''}, 
-        {todo:'83.一起敷面膜',achieve:'',checked:''}, 
-        {todo:'84.一起去自驾游',achieve:'',checked:''}, 
-        {todo:'85.一起去一次动物园',achieve:'',checked:''}, 
-        {todo:'86.一起骑自行车',achieve:'',checked:''}, 
-        {todo:'87.一起拍照洗照片贴房间',achieve:'',checked:''}, 
-        {todo:'88.一起洗衣服',achieve:'',checked:''}, 
-        {todo:'89.为对方录想对他说的话',achieve:'',checked:''}, 
-        {todo:'90.一起去听一次相声',achieve:'',checked:''}, 
-        {todo:'91.一起玩一次真心话大冒险⛳',achieve:'',checked:''}, 
-        {todo:'92.一起去许愿池许个愿❣️',achieve:'',checked:''}, 
-        {todo:'93.一起入住一次五星级酒店，看夜景',achieve:'',checked:''}, 
-        {todo:'94.一起去K歌',achieve:'',checked:''}, 
-        {todo:'95.一起穿情侣装',achieve:'',checked:''}, 
-        {todo:'95.一起拜见父母',achieve:'',checked:''}, 
-        {todo:'96.一起挑选婚纱',achieve:'',checked:''}, 
-        {todo:'97.一起装修我们的房子',achieve:'',checked:''}, 
-        {todo:'98.一起做饭',achieve:'',checked:''}, 
-        {todo:'99.一起为我们的小家添置东西',achieve:'',checked:''}, 
-        {todo:'100.在一起啊，也不算太久，就余生吧',achieve:'',checked:''}, 
-    ];
-    $(document).ready(function(){
-        $.each(lovetodos,function(i,e){
-            var html='<input type="checkbox" name="love" value="love" '+e.checked+'/>'  + e.todo+'<del>'+e.achieve+'</del>'+'<br>' ;
-            $('.love-todos').append(html);        
-        });
-    });
-
-</script>
-  
-  
-  
-    
-
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
       
-        
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-01T21:06:06+08:00">
-  <a class='notlink'>
-    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年3月1日</p>
-  </a>
-</div>
-
-        
-      
-        
-          
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://hujiahao.top/todo/index.html&title=Love💕Todos - 宁静致远&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://hujiahao.top/todo/index.html&title=Love💕Todos - 宁静致远&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://hujiahao.top/todo/index.html&title=Love💕Todos - 宁静致远&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
-          
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
-
-        
+        <div>
+          <a class='readmore' href='/2022/01/04/maven%E4%B8%AD%E7%9A%84%E6%89%93%E5%8C%85%E6%96%B9%E5%BC%8F/'>
+            阅读全文
+          </a>
+        </div>
       
     </div>
-  </div>
-
-
-  
   
 
-  
-</article>
-
-
-  
-
-  <article class="post white-box reveal shadow" id="comments">
-    <p ct><i class='fas fa-comments'></i> 评论</p>
-    
-    <div id="twikoo_container">
-  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-  </article>
+          </div>
+        
+      
+    
+  </section>
+  
+    
+  
 
 
-
-
-
-
+	
 </div>
 <aside class='l_side'>
   
@@ -1092,15 +858,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     
-
-
-
-
-  
-
-  
-    
-    
   
 
   <section class="widget tagcloud shadow desktop mobile">
@@ -1120,9 +877,133 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
 
+  
+
+  
+    
+    
+
+<section class="widget shadow desktop">
+  
+  <header>
+    
+      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>文章数目：</div>
+          <div>21 篇</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>已运行时间：</div>
+          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
+        </div>
+        <script>
+          var BirthDay = new Date(new Date('2020/01/01'));
+          var today = new Date();
+          var timeold = (today.getTime() - BirthDay.getTime());
+          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
+          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
+        </script>
+      
+
+
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站访客数：</div>
+          
+          <div><span id="lc-uv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 人</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站总访问量：</div>
+          
+          <div><span id="lc-sv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>最后活动时间：</div>
+          
+            <div id="last-update" style="display: none;">Tue Jan 04 2022 13:04:13 GMT+0800 (中国标准时间)</div>
+            <div id="last-update-show">2022-01-04 日</div>
+          
+        </div>
+        
+        <script>
+          function timeago(dateTimeStamp) {
+              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
+              var hour = minute * 60;
+              var day = hour * 24;
+              var week = day * 7;
+              var month = day * 30;
+              var now = new Date().getTime(); //获取当前时间毫秒
+              var diffValue = now - dateTimeStamp; //时间差
+              if (diffValue < 0) {
+                  return;
+              }
+              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
+              var hourC = diffValue / hour;
+              var dayC = diffValue / day;
+              var weekC = diffValue / week;
+              var monthC = diffValue / month;
+              if (monthC >= 1 && monthC <= 3) {
+                  result = " " + parseInt(monthC) + " 月前"
+              } else if (weekC >= 1 && weekC <= 3) {
+                  result = " " + parseInt(weekC) + " 周前"
+              } else if (dayC >= 1 && dayC <= 6) {
+                  result = " " + parseInt(dayC) + " 天前"
+              } else if (hourC >= 1 && hourC <= 23) {
+                  result = " " + parseInt(hourC) + " 小时前"
+              } else if (minC >= 1 && minC <= 59) {
+                  result = " " + parseInt(minC) + " 分钟前"
+              } else if (diffValue >= 0 && diffValue <= minute) {
+                  result = "刚刚"
+              } else {
+                  var datetime = new Date();
+                  datetime.setTime(dateTimeStamp);
+                  var Nyear = datetime.getFullYear();
+                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
+                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
+                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
+                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
+                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+                  result = Nyear + "-" + Nmonth + "-" + Ndate
+              }
+              return result;
+          }
+          var lastUpDate = document.getElementById('last-update').innerHTML;
+          try {
+            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
+          } catch (error) {
+            document.getElementById('last-update-show').innerHTML = '2022-01-04 日';
+          }
+        </script>
+        
+      
+    </div>
+  </div>
+</section>
+
+  
+
 
 </aside>
-
 
 
 		  
