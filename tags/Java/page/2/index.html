@@ -630,325 +630,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title" >
-      <a href="/2020/05/03/ThreadCommunication/">
-        线程通信
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        
-涉及到的三个方法：1、 wait():一旦执行此方法，当前线程就进入阻塞状态，并释放同步监视器。2、 notify():一旦执行此方法，就会唤醒被wait的一个线程。如果有多个线程被wait，就唤醒优先级高的那个。
-
-3、 notifyAll():一旦执行此方法，就会唤醒所有被wait的线程。
-
-说明：1、wait()，notify()，notifyAll()三个方法必须使用在同步代码块或...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-05-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/05/03/ThreadCommunication/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/05/03/Thread/">
-        解决线程安全问题的方法
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        一、同步代码块   synchronized(同步监视器){      //需要被同步的代码   }
-说明: 1.操作共享数据的代码，即为需要被同步的代码。  –&gt;不能包含代码多了，也不能包含代码少了。      2.共享数据：多个线程共同操作的变量。比如：ticket就是共享数据。            3.同步监视器，俗称：锁。任何一个类的对象，都可以充当锁。          要...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-05-03</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/05/03/Thread/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/04/15/%E5%8D%95%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-        单例设计模式
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <ol>
-<li><p>所谓类的单例设计模式，就是采取一定的方法保证在整个的软件系统中，对某个类只能存在一个对象实例。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-04-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/04/15/%E5%8D%95%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/04/14/Object%E7%B1%BB/">
-        Object类
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>Object类是所有Java类的根父类 ,如果在类的声明中未使用extends关键字指明其父类，则默认父类 为java.lang.Object类 </p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-04-14</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/04/14/Object%E7%B1%BB/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/04/14/java%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81/">
-        java的三大特征
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>封装性，继承性和多态性</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-04-14</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/04/14/java%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/04/14/%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD/">
-        方法重写和重载
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>方法重写和重载的区别</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-04-14</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/04/14/%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/04/05/%E6%95%B0%E7%BB%84%E5%9F%BA%E7%A1%80/">
-        数组基础
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>关于一维数组和二维数组学习笔记</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-04-05</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/04/05/%E6%95%B0%E7%BB%84%E5%9F%BA%E7%A1%80/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
       <a href="/2020/04/04/%E6%95%B0%E7%BB%84/">
         数组常用算法
       </a>
@@ -1151,7 +832,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box"
             title="/categories/Java/" href="/categories/Java/"
             id="categoriesJava"
-            ><div class='name'>Java</div><div class='badge'>(18)</div></a></li>
+            ><div class='name'>Java</div><div class='badge'>(11)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/SSM/" href="/categories/SSM/"
@@ -1217,7 +898,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>27 篇</div>
+          <div>21 篇</div>
         </div>
       
 
@@ -1260,8 +941,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sun Sep 19 2021 12:31:29 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2021-09-19 日</div>
+            <div id="last-update" style="display: none;">Tue Jan 04 2022 11:21:03 GMT+0800 (中国标准时间)</div>
+            <div id="last-update-show">2022-01-04 日</div>
           
         </div>
         
@@ -1311,7 +992,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-09-19 日';
+            document.getElementById('last-update-show').innerHTML = '2022-01-04 日';
           }
         </script>
         
